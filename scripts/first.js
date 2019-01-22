@@ -1,0 +1,1 @@
+alert('Some info about ice hockey!');

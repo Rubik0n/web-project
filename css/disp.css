@@ -1,0 +1,8 @@
+.container .delete {
+	 
+	cursor: pointer;
+	position: relative;
+	float: right;
+	width: 30px;
+
+}

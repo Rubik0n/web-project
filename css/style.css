@@ -1,0 +1,151 @@
+body{
+    background: url(../img/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    padding: 20px;
+    margin: 50px 170px 0px 170px;
+    background: url(../img/ice-background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    height: 130px;
+}
+
+.container{
+    padding: 20px;
+    margin: 10px 170px 0px 170px;
+    background: url(../img/ice-background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    height: auto;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+
+.logo{
+    width: 50px;
+    margin-right: 40px;
+    float: left;
+    position: relative;
+}
+
+.logo:hover{
+    width: 70px;
+}
+
+nav{
+    padding-top: 20px;
+}
+
+.menu{
+    padding: 0;
+    margin: 0;
+    display: block;
+    font-weight: bold;
+    position: relative;
+
+}
+
+.menu li{
+    float: left;
+    display: block;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.menu a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.testJquery em{
+    font-size: 20px;
+    font-weight: normal;
+    background: url(../img/hover.png) no-repeat;
+    width: 180px;
+    height: 45px;
+    position: absolute;
+    top: -85px;
+    left: 50px;
+    text-align: center;
+    padding: 20px 12px 10px;
+    font-style: normal;
+    z-index: 2;
+    display: none;
+}
+
+footer .container .testJqueryV2 em{
+    font-size: 20px;
+    font-weight: normal;
+    background: url(../img/hover.png) no-repeat;
+    width: 180px;
+    height: 45px;
+    position: absolute;
+    top: -85px;
+    left: 50px;
+    text-align: center;
+    padding: 20px 12px 10px;
+    font-style: normal;
+    z-index: 2;
+    display: none;
+}
+
+.button{
+    padding: 10px 15px 10px 10px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background: #FFFFFF;
+}
+.button:hover{
+    background: darkgray;
+}
+
+footer{
+    font-size: 20px;
+
+}
+
+section{
+    font-size: 30px;
+}
+ /*.form-group{
+     font-size: 20px;
+ }*/
+
+.form-group input{
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+.form-group select{
+    font-size: 25px;
+}
+
+#testResult{
+    text-align: justify;
+    background: #000000;
+
+    color: #FFFFFF;
+
+    margin-left: 40px;
+
+}
+
+#testErrors{
+    float: right;
+}
+
+.message_head{
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}

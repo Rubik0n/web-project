@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Тест</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/script.js"></script>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="scripts/disappearance.js"></script>
+    <script type="text/javascript" src="scripts/yandex.js"></script>
+
+    <link rel="stylesheet" href="css/disp.css">
+</head>
+<body>
+
+<header>
+    <a href="https://www.iihf.com/">
+        <img src="img/IIHF_logo.png" class="logo">
+    </a>
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="index.html" class="button">Главная</a>
+            </li>
+            <li>
+                <a href="rules.html" class="button">Правила игры</a>
+            </li>
+            <li>
+                <a href="field.html" class="button">Игровая площадка</a>
+            </li>
+            <li>
+                <a href="test.html" class="button">Тест</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <div class="container">
+        <img src="img/delete.png" alt="delete" class="delete">
+        <h3>Как много вы знаете о хоккее?</h3>
+
+        <div class="form-group">
+            <label for="answer1">
+                <br>1) Родина хоккея?</br>
+            </label>
+            <input type="text" id="answer1">
+        </div>
+
+        <div class="form-group">
+            <label for="answer2">
+                <br>2) Сколько минут в сумме длится основное время?</br>
+            </label>
+            <input type="text" id="answer2">
+        </div>
+
+        <form action="result.php" method="POST">
+            <br>3) Сколько игроков одновременно с обеих команд может быть на льду?</br>
+            <div>
+                <label for="answer3V1">
+                    <input type="radio" name="q1" id="answer3V1" value="false" onchange="change1()">
+                    10
+                </label>
+            </div>
+            <div>
+                <label for="answer3V2">
+                    <input type="radio" name="q1" id="answer3V2" value="true" onchange="change2()">
+                    12
+                </label>
+            </div>
+            <div>
+                <label for="answer3V3">
+                    <input type="radio" name="q1" id="answer3V3" value="false" onchange="change3()">
+                    14
+                </label>
+            </div>
+        </form>
+
+        <form class="form-group" action="option1.php">
+            <br>4) Как называется штрафной бросок в хоккее?</br>
+            <p>
+                <select name="heroes" id="selectValue">
+                    <option>-</option>
+                    <option value="false">Пенальти</option>
+                    <option value="true">Буллит</option>
+                    <option value="false">Пробежка</option>
+                </select>
+            </p>
+        </form>
+
+        <br>5) Сколько точек вбрасывания в хоккее?</br>
+        <div class="form-check form-check-inline">
+
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="false" onchange="change4()">
+            <label class="form-check-label" for="inlineRadio1">1</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="false" onchange="change5()">
+            <label class="form-check-label" for="inlineRadio2">5</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="true" onchange="change6()">
+            <label class="form-check-label" for="inlineRadio2">9</label>
+        </div>
+
+
+
+        <button style="margin-left: 40px; font-size: 20px" type="button" onclick="checkResults()">Посмотреть результат</button>
+
+        <span id="testResult"></span>
+        <div id="testErrors"></div>
+        <br><br>
+
+
+
+        <div>
+            Незнаете ответ на вопрос?
+            <br>
+            <input style="margin-left: 40px; font-size: 20px" type="button" value="Искать в Yandex" onclick="send()">
+            <div id="yandex"></div>
+        </div>
+
+    </div>
+</section>
+
+
+<footer>
+    <div class="container">
+        <img src="img/delete.png" alt="delete" class="delete">
+        © Все права защищены
+    </div>
+</footer>
+
+
+
+
+</body>
+</html>
